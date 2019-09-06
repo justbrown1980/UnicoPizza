@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,600,700&display=swap&display=swap);
+@font-face{font-family:beyond_the_mountainsregular;src:url(beyond_the_mountains-webfont.woff2) format('woff2'),url(beyond_the_mountains-webfont.woff) format('woff');font-weight:400;font-style:normal}
+:root{--clr-highlight:#eb1c25 git pull --clr--highlight-light:#e73a42;--clr-dark-bg:#151515 --clr-light-bg:#fff --clr-light-text:#ffffff --clr-dark-text:#151515 ---font-size:16px;--ratio:1.333;--h4:calc(var(--font-size__desktop)*var(--ratio));--h3:calc(var(--h4)*var(--ratio))--h2:calc(var(--h3)*var(--ratio))--h1:calc(var(--h2)*var(--ratio));--font-body:"Open Sans",Arial,Helvetica,sans-serif;--font-nav:"Montserrat",Arial,Helvetica,sans-serif --spacing-normal:16px --spacing-large:24px;--spacing-x-large:32px}
+*{margin:0;padding:0;box-sizing:border-box}
+img{max-width:100%;display:block}
+body{font:400 var(--font-size) var(--font-family);background-color:var(--clr-light-bg);color:var(--clr-dark-text)}
+a{color:var(--clr-light-text);text-decoration:none}
+h1{font-family:"PT Sans",sans-serif;font-size:calc(var(--h1)*1);text-align:center;margin:0;width:100%;color:var(--clr-light-text)}
+h2{font-family:var(--font-nav);text-transform:uppercase;font-weight:600;font-size:var(--h2)}
+h2 span{font-weight:400}
+a[href^="tel:"]{font-size:16px;font-weight:700}
+a[href^="tel:"]:before{content:"☏  ";padding-right:.25rem;font-size:18px}
+.navigation{height:100px;background:var(--clr-light-bg)}
+.brand{position:absolute;float:left;line-height:100px;text-transform:uppercase;font-size:1rem;margin-top:10px}
+.brand a,.brand a:visited{color:var(--clr-dark-text);text-decoration:none}
+.nav-container{max-width:90vw;margin:0 1vw}
+nav{float:right}
+nav ul{list-style:none;margin:0;padding:0}
+nav li{float:left;position:relative}
+nav a,nav a:visited{display:block;padding:0 20px;font-size:14px;line-height:100px;background:var(--clr-light-bg);color:var(--clr-dark-text);text-decoration:none;font-family:var(--font-nav);font-weight:700;text-transform:uppercase}
+nav li a:hover,nav ul li a:visited:hover{background:var(--clr--highlight-light);color:var(--clr-light-text)}
+nav li a:not(:only-child):after,nav ul li a:visited:not(:only-child):after{padding-left:.25rem;content:' ▾'}
+nav li ul li{min-width:190px}
+nav li ul li a{padding:15px;line-height:20px}
+.nav-dropdown{position:absolute;display:none;z-index:1;box-shadow:0 3px 12px rgba(0,0,0,.15)}
+.nav-mobile{display:none;position:absolute;top:10px;right:0;background:0 0;height:70px;width:70px}
+@media only screen and (max-width:1239px){
+.nav-mobile{display:block}
+nav{width:100%;padding:90px 0 15px 0}
+nav ul{display:none}
+nav li{float:none}
+nav li a{padding:15px;font-size:16px;line-height:20px}
+nav li ul li a{padding-left:30px}
+.nav-dropdown{position:static}
+}
+@media screen and (min-width:1240px){
+.nav-list{display:block!important}
+}
+#nav-toggle{position:absolute;left:18px;top:22px;cursor:pointer;padding:10px 35px 16px 0rem}
+#nav-toggle span,#nav-toggle span:after,#nav-toggle span:before{cursor:pointer;border-radius:1px;height:5px;width:35px;background:var(--clr-highlight);position:absolute;display:block;content:'';transition:all .3s ease-in-out}
+#nav-toggle span:before{top:-10px}
+#nav-toggle span:after{bottom:-10px}
+#nav-toggle.active span{background-color:transparent}
+#nav-toggle.active span:after,#nav-toggle.active span:before{top:0}
+#nav-toggle.active span:before{transform:rotate(45deg)}
+#nav-toggle.active span:after{transform:rotate(-45deg)}
+.banner{background:url(images/pizza-header2-medium.jpg) center center no-repeat;background-size:cover;object-fit:cover;width:100%;height:400px;display:grid;text-align:center;justify-content:center;align-items:center}
+@media screen and (min-width:800px){
+main{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:1fr;gap:1rem;margin:3vh 3vw 0 3vw}
+.content{grid-column:1/-1}
+[class*=deal]{grid-column:span 2;background-color:rgba(216,216,216,.8)}
+[class*=deal] h2{background-color:var(--clr-highlight);color:var(--clr-light-text);padding:8px}
+}
+#toTop{padding:5px 3px;background:#000;color:#fff;position:fixed;bottom:0;right:5px;display:none}
+#toTop:before{font-family:thegem-icons;content:'\e633';font-size:24px;font-weight:400;display:inline-block;vertical-align:top;width:50px;height:50px;text-align:center;line-height:50px;background-color:#06060f;color:#99a9b5}
