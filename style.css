@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,600,700&display=swap&display=swap);
+@import url(ttps://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,600,700&display=swap);
 @font-face{font-family:beyond_the_mountainsregular;src:url(beyond_the_mountains-webfont.woff2) format('woff2'),url(beyond_the_mountains-webfont.woff) format('woff');font-weight:400;font-style:normal}
 :root{--clr-highlight:#eb1c25 git pull --clr--highlight-light:#e73a42;--clr-dark-bg:#151515 --clr-light-bg:#fff --clr-light-text:#ffffff --clr-dark-text:#151515 ---font-size:16px;--ratio:1.333;--h4:calc(var(--font-size__desktop)*var(--ratio));--h3:calc(var(--h4)*var(--ratio))--h2:calc(var(--h3)*var(--ratio))--h1:calc(var(--h2)*var(--ratio));--font-body:"Open Sans",Arial,Helvetica,sans-serif;--font-nav:"Montserrat",Arial,Helvetica,sans-serif --spacing-normal:16px --spacing-large:24px;--spacing-x-large:32px}
 *{margin:0;padding:0;box-sizing:border-box}
