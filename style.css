@@ -9,9 +9,13 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading)}
 h1{font-size:var(--h1);text-align:center;color:var(--clr-light-text)}
 h2{text-transform:uppercase;font-weight:700;font-size:var(--h2);padding:var(--spacing-x-large) 0 5px 0;text-align:center;position:relative}
 h2:before{position:absolute;width:15%;border:0;border-bottom:4px solid var(--yellow3);margin:2.5em auto 2.3em}
+h3 {text-transform: uppercase; font-size: var(--h3); margin-bottom: var(--spacing-normal)}
 .section__title{grid-column:1/-1;text-transform:uppercase;font-family:var(--font-heading);text-align:center;margin:var(--spacing-large) 0}
+
+a {color: var(--clr-dark-text)}
 a[href^="tel:"]{font-size:16px;font-weight:700}
 a[href^="tel:"]:before{content:"☏  ";padding-right:.25rem;font-size:18px}
+iframe {width: 100%; max-height: 50vh; display: inline-block;}
 .navigation{height:100px;background:var(--clr-light-bg)}
 .brand{position:absolute;float:left;line-height:100px;text-transform:uppercase;font-size:16px;margin-top:10px;padding-top:10px}
 .brand a,.brand a:visited{color:var(--clr-dark-text);text-decoration:none}
@@ -46,7 +50,7 @@ nav li ul li a{padding-left:30px}
 #nav-toggle.active span:after,#nav-toggle.active span:before{top:0}
 #nav-toggle.active span:before{transform:rotate(45deg)}
 #nav-toggle.active span:after{transform:rotate(-45deg)}
-.banner{background:url(images/pizza-header2-medium.jpg) center center no-repeat;background-size:cover;object-fit:cover;width:100%;height:400px;display:grid;text-align:center;justify-content:center;align-items:center}
+.banner{background:url(images/hot-pizza.jpg) center center no-repeat;background-size:cover;object-fit:cover;width:100%;height:400px;display:grid;text-align:center;justify-content:center;align-items:center}
 section, footer{padding:var(--spacing-x-large) 0}
 [class*=deal]{background-color:rgba(216,216,216,.8);margin:var(--spacing-large) 0}
 [class*=deal] h3{background-color:var(--clr-highlight);color:var(--clr-light-text);text-transform:uppercase;padding:8px}
@@ -57,6 +61,7 @@ footer a:hover {color: var(--clr-highlight)}
 footer li {display: inline-block; margin: 0 8px; text-transform: capitalize}
 footer svg {width: 25px; height: 25px; fill: #fff;}
 footer svg:hover {fill: var(--clr--highlight-light)}
+.map, .hours {margin: var(--spacing-normal) 0;}
 
 
 @media screen and (min-width:800px){
@@ -64,4 +69,7 @@ footer svg:hover {fill: var(--clr--highlight-light)}
 .content{grid-column:1/-1}
 [class*=deal]{grid-column:span 2}
 footer ul, footer p {grid-column: span 2;}
+.location {display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows: max-content;gap:1rem;margin:0 3vw}
+.map{ grid-column: 1 / 5 }
+.hours {grid-column: 6 / -1 }
 }
