@@ -56,7 +56,7 @@ footer, footer a {text-align: center; color:#a5a5a5}
 footer a:hover {color: var(--clr-highlight)}
 footer li {display: inline-block; margin: 0 8px; text-transform: capitalize}
 footer svg {width: 25px; height: 25px; fill: #fff;}
-footer svg:hover {fill: var(--clr-highlight)}
+footer svg:hover {fill: var(--clr--highlight-light)}
 
 
 @media screen and (min-width:800px){
